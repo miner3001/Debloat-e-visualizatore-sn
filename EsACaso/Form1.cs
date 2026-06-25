@@ -71,6 +71,7 @@ namespace EsACaso
             richTextBox1.AppendText($"CPU core: {Environment.ProcessorCount}\n");
             richTextBox1.AppendText($"RAM:      {mem.ullAvailPhys / 1024 / 1024} MB liberi / {mem.ullTotalPhys / 1024 / 1024} MB totali\n");
             richTextBox1.AppendText($"Disco C:  {drive.AvailableFreeSpace / 1024 / 1024 / 1024} GB liberi / {drive.TotalSize / 1024 / 1024 / 1024} GB totali\n");
+            richTextBox1.AppendText($"Dominio:  {Environment.UserDomainName}\n");
             richTextBox1.AppendText($"PC name:  {Environment.MachineName}\n");
             richTextBox1.AppendText($"Utente:   {Environment.UserName}\n");
             richTextBox1.ReadOnly = true;
